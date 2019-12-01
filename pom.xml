@@ -62,7 +62,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Poniższe trzy zostały dorzucone po wygenerowaniu -->
+        <!-- Poniższe trzy zostały dodane po wygenerowaniu -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
