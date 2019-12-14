@@ -1,4 +1,4 @@
-package pl.wojciech.twitter.message
+package pl.wojciech.twitter.tweet
 
 import pl.wojciech.twitter.author.Author
 import java.time.LocalDateTime
@@ -8,7 +8,7 @@ import javax.validation.constraints.Size
 
 @Entity
 @Table(name = "tweets")
-class Message {
+class Tweet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
