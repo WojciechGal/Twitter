@@ -18,7 +18,7 @@ class AuthorServiceImpl(private val authorRepository: AuthorRepository, private 
         author.password = passwordEncoder.encode(author.password)
         author.enabled = 1
         val authorRole = roleRepository.findByName("ROLE_USER")
-        author.roles = HashSet(Arrays.asList(authorRole))
+        author.roles = HashSet(listOf(authorRole))
         authorRepository.save(author)
     }
 
