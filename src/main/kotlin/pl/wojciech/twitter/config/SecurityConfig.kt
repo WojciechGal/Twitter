@@ -17,7 +17,7 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
         http.authorizeRequests()
                 .antMatchers("/**").permitAll()
                 .and().formLogin()
-                .loginPage("/login").defaultSuccessUrl("/messages").failureUrl("/login?error=fail")
+                .loginPage("/login").defaultSuccessUrl("/twitterDashboard").failureUrl("/login?error=fail")
                 .and().logout().logoutSuccessUrl("/").permitAll()
     }
 
