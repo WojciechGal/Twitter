@@ -1,5 +1,6 @@
 package pl.wojciech.twitter.author
 
+import pl.wojciech.twitter.message.Message
 import pl.wojciech.twitter.role.Role
 
 import javax.persistence.*
@@ -30,4 +31,7 @@ class Author {
     @ManyToMany(fetch = FetchType.EAGER, cascade = [CascadeType.ALL])
     @JoinTable(name = "author_role", joinColumns = [JoinColumn(name = "author_id")], inverseJoinColumns = [JoinColumn(name = "role_id")])
     var roles: Set<Role>? = null
+
+    @OneToMany(mappedBy = "author")
+    var messages: List<Message> = listOf()
 }
