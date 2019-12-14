@@ -4,8 +4,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Service
 import pl.wojciech.twitter.role.RoleRepository
 
-import java.util.*
-
 @Service
 class AuthorServiceImpl(private val authorRepository: AuthorRepository, private val roleRepository: RoleRepository,
                         private val passwordEncoder: BCryptPasswordEncoder) : AuthorService {
