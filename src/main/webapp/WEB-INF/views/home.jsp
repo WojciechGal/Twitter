@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1 style="text-align: center; color: aqua">Welcome in Twitter</h1>
+<button style="position: fixed; left: 50%; right: 50%" onclick="location.href='<%=request.getContextPath()%>/login'">Login</button>
 </body>
 </html>
