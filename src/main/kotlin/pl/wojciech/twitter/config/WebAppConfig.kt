@@ -9,5 +9,6 @@ class WebAppConfig : WebMvcConfigurer{
 
     override fun addViewControllers(registry: ViewControllerRegistry) {
         registry.addViewController("/login").setViewName("login")
+        registry.addViewController("/twitterDashboard").setViewName("/twitterDashboard")
     }
 }
