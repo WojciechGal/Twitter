@@ -1,7 +1,7 @@
 package pl.wojciech.twitter.author
 
-import pl.wojciech.twitter.message.Message
 import pl.wojciech.twitter.role.Role
+import pl.wojciech.twitter.tweet.Tweet
 
 import javax.persistence.*
 import javax.validation.constraints.NotBlank
@@ -33,5 +33,5 @@ class Author {
     var roles: Set<Role>? = null
 
     @OneToMany(mappedBy = "author")
-    var messages: List<Message> = listOf()
+    var tweets: List<Tweet> = listOf()
 }
